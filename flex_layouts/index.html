@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	
+	<style>
+				
+		body{
+			background-color: #000000;
+			font-family: 'Roboto', sans-serif;;
+		}
+		
+		header{
+			height:50vh;
+			color: #FF3F00;
+			margin-right: auto;
+			/*this is a flexbox element*/
+			display: flex;
+			/*put this in the center of the container*/
+			align-items: center;
+/*			justify-content: center;*/
+			padding-left: 20px;
+			
+			background-image: url("images/moon.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center
+		}
+		
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		
+		footer{
+			padding: 50px 0px;
+			
+		}
+		
+		
+		
+		/* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+         .flex-container {
+			 
+            flex-direction: column
+          }
+        }
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			background-color: #FF9977;
+			margin:10px;
+		}
+
+		/*set the width of the divs*/
+		#item1{
+			flex:25%;
+		}
+		
+		#item1 img{
+			width: 100%;
+		}
+		
+		#item2{
+			flex:50%;
+		}
+		#item3{
+			flex:25%;
+		}
+		
+		
+		.btn{
+			background-color: #DA0000;
+			border: none;
+			padding: 15px 32px;
+			font-size: 16px;
+			width: 100%;
+		}
+		
+		.btn:hover{
+			background-color: #790000;
+			color: #FFFFFF;
+		}
+			
+			
+		/****second row****/	
+			
+		#item4{
+			flex:50%;
+		}
+		#item5{
+			flex:50%;
+		}
+		
+		
+		/****second row****/	
+			
+		#item6{
+			flex:25%;
+			background-color: transparent;
+		}
+		#item7{
+			flex:50%;
+		}
+		#item8{
+			flex:25%;
+			background-color: transparent;
+		}
+		
+		
+		
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>The Page Heading</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">
+			<img src="images/person.jpg" alt="creepy person">
+		</div>
+		
+		<div id="item2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eius praesentium, ullam voluptatem, unde est harum itaque laboriosam placeat! Facilis numquam iste qui ea a, quos consequatur suscipit velit nam praesentium magnam tenetur veniam facere quidem iure iusto, tempore dolores neque voluptatum quibusdam laudantium saepe nobis nihil. Perferendis omnis earum amet, ullam dolores sunt cumque non fugiat repudiandae distinctio quidem incidunt expedita, vel. Unde saepe voluptatum fugit repellat quam perspiciatis totam eius facere modi id facilis aut similique numquam pariatur quasi quibusdam ipsum, iure sequi adipisci assumenda quaerat. Fugit voluptatum consequuntur velit ipsam maxime ratione, voluptate vitae obcaecati, quaerat adipisci.</p>
+		</div>
+		
+		
+		<div id="item3">
+		<!------add some buttons------>
+			<p><button class="btn">Click Me!</button></p>
+			<p><button class="btn">Click Me Too!</button></p>	
+		</div>
+		
+		
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam deserunt fugit molestias eius asperiores quasi autem assumenda numquam molestiae vel magni adipisci, est possimus aperiam blanditiis. Beatae ducimus earum odit.</p>
+		</div>
+		
+		<div id="item5">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum, quis odit quisquam minus reprehenderit, asperiores esse iste quam non, dolor atque amet maxime soluta.</p>
+		</div>		
+		
+	</div>
+	
+	<div class="flex-container">
+		
+		<div id="item6"></div>
+		
+		<div id="item7">Created by Bk Tiem</div>
+		
+		<div id="item8"></div>
+	
+	</div>	
+		
+</body>
+</html>
