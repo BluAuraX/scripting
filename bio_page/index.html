@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+	
+	<!---------Fonts---------->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	
+	<!---------CSS------------>
+	
+	<style>
+		header{
+			background-color: rgba(0,0,0,0.75);
+			text-align: center;
+			padding: 40px;
+			font-family: 'Dancing Script', cursive;
+			font-size: 40px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		body{
+			background-image: url("images/background.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		
+		
+		
+		/* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+         .flex-container{
+            flex-direction: column
+          }
+        }
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			margin:150px;
+		}
+		
+		#home{
+			flex:100%;
+			font-size: 30px;
+		}
+		
+		#about{
+			flex:100%;
+			font-size: 40px;
+			font-family: 'Dancing Script', cursive;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		#interests{
+			flex:100%;
+			font-size: 40px;
+			font-family: 'Dancing Script', cursive;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		/*set the width of the divs*/
+		#item1{
+			flex:50%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		#item2{
+			flex:50%;
+		}
+		
+		/*set the width of the divs*/
+		#item3{
+			flex:100%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		/*set the width of the divs*/
+		#item4{
+			flex:100%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		#item5{
+			flex:50%;
+		}
+		
+		#item6{
+			flex:50%;
+			margin-left: 0px;
+		}
+		
+		/*set the width of the divs*/
+		#item7{
+			flex:100%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		/*set the width of the divs*/
+		#projects{
+			flex:50%;
+			font-size: 40px;
+			font-family: 'Dancing Script', cursive;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+		
+		#item8{
+			flex:50%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 50px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+	
+	/*-------buttons-------*/
+		
+	.btn{
+			background-color: rgba(250,252,255,0.79);
+			border: none;
+			padding: 10px;
+			font-size: 16px;
+			width: 100%;
+		}
+		
+		.btn:hover{
+			background-color: #001B67;
+			color: #FFFFFF;
+		}
+		
+		footer{
+			flex:100%;
+			font-size: 18px;
+			background-color: rgba(0,0,0,0.75);
+			padding: 30px;
+			text-shadow: 4px 4px 10px rgba(0,0,0,0.50);
+			border-bottom: groove;
+			color: rgba(255,255,255,1.00);
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+	<header><h1 class="title">Bk Tiem</h1></header>
+	
+	
+	<!--------section 1--------->
+	
+	<section class="home">
+	
+	<div class="flex-container">
+		<div id="item1">
+			<p>Bk Tiem is a first-year student in the Multimedia Production program at Lethbridge College. He is passionate about technology and content creation. He aspires to become a fully fledged content creator or graphic/audio designer in the future. He's still unsure of his goals after college but believes he will discover them through this program.</p>
+		</div>
+		
+		<div id="item2">
+			<p><img src="images/media_design.jpg" alt="cn tower" width="500"></p>
+		
+		</div>
+	
+	</div>
+	</section>
+	
+	<!--------section 2--------->
+	
+	<section class="about">
+		<div id="about">
+			<h2><p align="center">ABOUT</p></h2>
+		</div>
+	
+	<div class="flex-container">
+		<div id="item3">
+			<p>He is 19-years-old and is still uncertain about his overall future, but he is focused on game development and learning how to create various media. Multimedia seems like a suitable spot for him while he finds his path. He loves music, video games, and creating unique content. He desires to improve his skills in music production and he hopes to develop his own video game. Another dream of his is to work for a big-time media organization like Apple, Microsoft, or even the gaming industry.</p>
+		</div>
+	
+	</div>
+	</section>
+	
+	<!--------section 3--------->
+	
+	<section class="interests">
+		<div id="interests">
+			<h2><p align="center">INTERESTS</p></h2>
+		</div>
+	
+	<div class="flex-container">
+		<div id="item4">
+			<p>Bk has been into computers for a very long time, since a very young age. He started playing video games on PC and has been playing since. He loves playing RPGs, action-adventure, and fighting games. He’s been playing video games since he was young and he’s played countless titles over the years. Bk is also into anime and enjoys watching movies, specifically action and drama films. His favourite anime/manga series is Bleach by Tite Kubo. He doesn’t watch television anymore, although he loved watching cartoons and sitcoms when he was younger. He dreams of someday meeting the creators of his favourite TV shows and manga, as well as other content creators he admires.</p>
+		</div>
+	
+	</div>
+	</section>
+	
+	<!--------section 4--------->
+	
+	<section class="images">
+	
+	<div class="flex-container">
+		<div id="item5">
+			<p><img src="images/bleach.jpg" alt="bleach" width="500"></p>
+		</div>
+		
+		<div id="item6">
+			<p><img src="images/league.jpg" alt="league" width="500"></p>
+		</div>
+	
+	</div>
+	</section>
+	
+	<!--------section 5--------->
+	
+	<section class="closing">
+	
+	<div class="flex-container">
+		<div id="item7">
+			<p>Bk is a very modest and laid-back individual who respects anyone that respects him. He loves it when you’re in a good mood and always tries to understand others emotions. He believes in the statement of living life to the fullest and accomplishing everything you can while you still can. His goals after college are still unknown , but he’s sure to find the grand key he’s been looking for through this program. </p>
+		</div>
+	
+	</div>
+	</section>
+	
+	<!--------section 6--------->
+	
+	<section class="projects">
+		
+	<div class="flex-container">
+		<div id="projects">
+			<h2><p align="center">PROJECTS</p></h2>
+		</div>
+	
+		<div id="item8">
+			<p><button class="btn">Site Construction</button></p>
+			<p><button class="btn">Basic Interaction</button></p>
+			<p><button class="btn">Object Properties</button></p>
+		</div>
+	</div>
+	</section>
+	
+	
+	<!--------footer--------->
+	
+	<footer>
+	<p align="center">Page created by Bk Tiem</p>
+	
+	</footer>
+	
+	
+</body>
+</html>
