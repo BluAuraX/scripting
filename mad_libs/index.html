@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Let's Eat</title>
+	
+	<style>
+		body{background-color:#1F1F1F;color:white;background-image: url("images/bg.jpg");margin-left: 500px;width: 500px;}
+		h1{margin-left: 150px;}
+		.red{color:red}
+	</style>
+	
+</head>
+
+<body>
+	
+	<h1>Let's Eat!</h1>
+	
+	<p>Fill out these questions to generate your own silly mad libs story instantly online! This MadLib only has nouns, verbs, and adjectives so it can be used with Kindergarten common core classes. (Hint: a <b>verb</b> is an action. A <b>noun</b> is a person/place/thing. An <b>adjective</b> describes a person/place/thing.)</p>
+	
+	<!--the beginning of the form - we will add the function call to hook it up with our JavaScript-->
+	<form action="javascript:myStory();">
+	
+		<!--simple text field with some added attributes-->
+		<p>
+			<label for="adj">Adjective:</label>
+			<input type="text" id="adj" name="adj" autofocus>
+		</p>
+		
+		<p>
+			<label for="ani">Animal:</label>
+			<input type="text" id="ani" name="ani">
+		</p>
+		
+		<p>
+			<label for="ride">Something You Ride In:</label>
+			<input type="text" id="ride" name="ride">
+		</p>
+		
+		<p>
+			<label for="verb">Verb:</label>
+			<input type="text" id="verb" name="verb">
+		</p>
+		
+		
+		<!--the button which will 'submit' the form to the 'form action' which is a call to our JavaScipt function-->
+		<p><input type="submit" value="Generate Story"></p>	
+	</form>
+	
+	<!--empty div for story-->
+	<div id="output"></div>
+	
+	<script>
+		function myStory(){
+			//this is where the function that runs on the form is submitted
+			console.log("It's working");
+			
+			//variable declaration block -- This is where we create the variables and assign them a value
+			//In this case the value is whatever the user has entered into the input elements
+	var ad1=document.getElementById('adj').value;
+	var ani1=document.getElementById('ani').value;
+	var rid=document.getElementById('ride').value;
+	var ver=document.getElementById('verb').value;
+	
+		
+	//concantenate together strings and variables to create a message
+	document.getElementById('output').innerHTML="A "+ad1+" "+ani1+" once set off into the city of Chicago searching for food. He was chilly, hungry, and craving for something to eat as he hadn't eaten anything for months. There was a strange noise heard from a small cabin nearby. The "+ani1+" was curious, he couldn’t resist the urge of finding a tasty snack. His curiosity persuaded him to "+ver+" towards the cabin. As he arrived, the door was locked. He could still hear the sounds coming from within the cabin. It sounded as if someone was playing video games. The "+ani1+" couldn’t handle the temptation of finding a meal, so he started punching the cabin door. A few furious punches wouldn’t even budge the door open, so he started kicking. While progressively kicking and punching the cabin door, the human inside became wary of the intruder. He turned off his video games and walked towards the door asking who was at the door. No response was given, so he began shouting “Hello!?”. The "+ani1+" used much more force when he heard the person speaking out loud. The human was terrified, he couldn’t move a muscle. He was unsure if it was even a human being at the front door. He was indecisive about what to do. Extremely hesitant to open the door, he grabbed his cell phone and attempted to call the police. As he dialed 911, the door bursts open and the bear meets the human. It was a bearded young man who looked like he was in his early 20s. The man violently screams, throws his phone in the air, and runs towards the back exit. The "+ani1+" chases him out the door and follows him outside. The man races to his "+rid+" and quickly shuts the door. He swiftly drives off, leaving the bear behind. Disappointed that he couldn’t catch his prey, the "+ani1+" re-enters the cabin. He finds a box of pizza lying beside the couch where the man’s video games were. He grabs a slice and departs the cabin. ";	
+			
+			
+		}
+	</script>
+	
+</body>
+</html>
